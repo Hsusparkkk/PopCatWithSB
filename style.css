@@ -36,8 +36,9 @@ button{
     margin: .5vw;
 }
 
-#fileInput{
+input{
     font-size: 2vw;
+    margin: 5px;
 }
 
 @keyframes runMarq {

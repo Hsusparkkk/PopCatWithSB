@@ -39,7 +39,7 @@ setInterval(() => {
 
 setInterval(()=>{
     body.style.backgroundColor = "rgb("+Math.floor(Math.random()*225)+","+Math.floor(Math.random()*225)+","+Math.floor(Math.random()*225)+")"
-},Math.floor(Math.random()*v*450))
+},Math.floor(Math.random()*v*1000))
 
 
 
