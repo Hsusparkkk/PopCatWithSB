@@ -4,7 +4,7 @@ const wbButton = document.getElementById("wb")
 const whButton = document.getElementById("wh")
 const fileInput = document.getElementById("fileInput")
 const image = document.getElementById("image")
-
+const pcButton = document.getElementById("popcat")
 // document.onclick = ()=>{
 //     console.log("helloworld")
 // }
@@ -22,6 +22,14 @@ whButton.addEventListener("click",function(){
     coElem = document.getElementById("coElem")
     coElem.innerHTML = " <img id="+"image"+" src="+thisSrc+" ></img>"
     console.log("wh")
+})
+
+
+pcButton.addEventListener("click",function(){
+    let thisSrc = "popcat.png"
+    coElem = document.getElementById("coElem")
+    coElem.innerHTML = " <img id="+"image"+" src="+thisSrc+" ></img>"
+    console.log("popcat(pc)")
 })
 
 fileInput.addEventListener("change",(curFile)=>{
