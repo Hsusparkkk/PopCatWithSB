@@ -13,6 +13,9 @@ whButton.addEventListener("click",function(){
     music.play()
 })
 
+pcButton.addEventListener("click",()=>{
+    music.play()
+})
 fileInput.addEventListener("change",()=>{
     music.play()
 })
