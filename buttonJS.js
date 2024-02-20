@@ -1,8 +1,15 @@
 console.log("buttonJS.js loaded")
 
+const funcBar = document.getElementById("funcBar")
+
 const wbButton = document.getElementById("wb")
 const whButton = document.getElementById("wh")
-const fileInput = document.getElementById("fileInput")
+// const fileInput = document.getElementById("fileInput")
+const fileInput = document.createElement("input")
+fileInput.type = "file"
+fileInput.accept="image/png"
+fileInput.id = "fileInput"
+funcBar.appendChild(fileInput)
 const image = document.getElementById("image")
 const pcButton = document.getElementById("popcat")
 // document.onclick = ()=>{
