@@ -17,5 +17,12 @@ pcButton.addEventListener("click",()=>{
     music.play()
 })
 fileInput.addEventListener("change",()=>{
+    let oldFileInput = document.getElementById("fileInput")
+    funcBar.removeChild(oldFileInput)
+    const newFileInput = document.createElement("input")
+    newFileInput.type = "file"
+    newFileInput.accept="image/png"
+    newFileInput.id = "fileInput"
+    funcBar.appendChild(fileInput)
     music.play()
 })
