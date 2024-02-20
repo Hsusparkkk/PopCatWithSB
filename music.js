@@ -2,11 +2,17 @@ const music = new Audio("chipichapa.mp3")
 
 music.volume = 0.7
 music.loop = true
-const mp3Input = document.getElementById("mp3Input")
 
-body.addEventListener("mousemove",()=>{
+
+wbButton.addEventListener("click",function(){
     music.play()
 })
-body.addEventListener（"touchstart",()=>{
+
+
+whButton.addEventListener("click",function(){
+    music.play()
+})
+
+fileInput.addEventListener("change",()=>{
     music.play()
 })
