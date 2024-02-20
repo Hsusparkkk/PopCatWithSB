@@ -14,8 +14,10 @@
     /* height: 100vh; */
 }
 img{
-    height: 70vh;
+    top: .5vh;
+    height:50vh;
     border-radius: 5%;
+    animation: .5s rocate infinite ;
 }
 body{
     display: flex;
@@ -45,11 +47,15 @@ input{
     0%{
         transform: translateX(100svw);
     }
-    50%{
-        transform: rotate(-20deg);
-    }
     100%{
         transform: translateX(-100%);
     }
+    
+}
+
+@keyframes rocate {
+    0%{transform: rotate(3deg);}
+    50%{transform: rotate(-10deg);}
+    100%{transform: rotate(3deg);}
     
 }
